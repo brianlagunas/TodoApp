@@ -1,4 +1,5 @@
-﻿using Prism.Navigation;
+﻿using System;
+using Prism.Navigation;
 using TodoApp.Services;
 
 namespace TodoApp.ViewModels
@@ -28,6 +29,11 @@ namespace TodoApp.ViewModels
             IsLoading = true;
             await GetTodoItems();
             IsLoading = false;
+        }
+
+        public void OnNavigatingTo(NavigationParameters parameters)
+        {
+            
         }
     }
 }
