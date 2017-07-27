@@ -24,9 +24,9 @@
           <ColumnDefinition/>
           <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <Entry x:Name="newItemName" Placeholder="Item name" Text="{Binding TodoText}" />
+        <Entry x:Name="newItemName" AutomationId="EntryNewTodoItemName" Placeholder="Item name" Text="{Binding TodoText}" />
         <StackLayout x:Name="buttonsPanel" Grid.Column="1" Orientation="Horizontal" HorizontalOptions="StartAndExpand">
-          <Button Text="+" MinimumHeightRequest="30" Command="{Binding AddTodoItemCommand}"/>
+          <Button AutomationId="ButtonAddTodoItem" Text="+" MinimumHeightRequest="30" Command="{Binding AddTodoItemCommand}"/>
         </StackLayout>
       </Grid>
     </StackLayout>

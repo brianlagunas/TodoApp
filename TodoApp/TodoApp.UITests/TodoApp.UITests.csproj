@@ -65,6 +65,10 @@
       <Project>{c361d69f-eb36-402f-b93a-5bde2488f971}</Project>
       <Name>TodoApp.Droid</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TodoApp\TodoApp.csproj">
+      <Project>{f859070a-568a-48e3-ac41-de43b3855914}</Project>
+      <Name>TodoApp</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
