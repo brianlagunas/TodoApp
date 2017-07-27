@@ -27,7 +27,7 @@ namespace TodoApp
 
 		protected override void OnStart()
 		{
-			MobileCenter.Start("android=3b9c02cc-178f-46f4-a5a9-a93958d6e06a;", typeof(Analytics), typeof(Crashes));
+			MobileCenter.Start("android=41320330-983d-4d55-8020-56fb7bf8c907;", typeof(Analytics), typeof(Crashes));
 		}
 	}
 }
