@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TodoApp.Views.CrashPage">
+	<ContentPage.Padding>
+		<OnPlatform
+            x:TypeArguments="Thickness">
+			<On
+                Platform="iOS"
+                Value="0,20,0,0" />
+		</OnPlatform>
+	</ContentPage.Padding>
+	<StackLayout
+        Spacing="20"
+        Margin="5">
+		<Label
+            Text="Total Bummer"
+            FontSize="24"
+            TextColor="Red" />
+		<Label
+            Text="Unfortunately this program has had an unexpected error."
+            FontSize="16" />
+		<Label
+            Text="Please close this application and restart."
+            FontSize="16" />
+		<Label
+            Text="{Binding Path=ExceptionMessage}"
+            FontSize="12" />
+	</StackLayout>
+</ContentPage>
