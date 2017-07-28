@@ -2,14 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TodoApp.Views.CrashPage">
-	<ContentPage.Padding>
-		<OnPlatform
-            x:TypeArguments="Thickness">
-			<On
-                Platform="iOS"
-                Value="0,20,0,0" />
-		</OnPlatform>
-	</ContentPage.Padding>
 	<StackLayout
         Spacing="20"
         Margin="5">
